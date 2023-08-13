@@ -33,7 +33,9 @@
 <script>
 import BpmnModeler from 'bpmn-js/lib/Modeler'
 import DefaultEmptyXML from '@/const/defaultEmptyXML'
-import { BpmnPropertiesPanelModule, BpmnPropertiesProviderModule } from 'bpmn-js-properties-panel'
+import BpmnPropertiesPanelModule from 'bpmn-js-properties-panel'
+import CamundaPropertiesProviderModule from 'bpmn-js-properties-panel/lib/provider/camunda'
+import camundaModdle from 'camunda-bpmn-moddle/resources/camunda.json'
 
 export default {
     name: 'BpmnCanvas',
@@ -58,9 +60,14 @@ export default {
                 // 添加到扩展模块内
                 additionalModules: [
                     BpmnPropertiesPanelModule,
-                    BpmnPropertiesProviderModule
-                ]
+                    CamundaPropertiesProviderModule
+                ],
+                // 模块拓展，拓展activiti的描述
+                moddleExtensions: {
+                    camunda: camundaModdle
+                }
             })
+            this.bpmnModeler.createDiagram()
         },
         loadResourceSuccess() {
             console.log('加载成功做点什么, 加事件监听啥的')
