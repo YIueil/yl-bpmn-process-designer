@@ -1,0 +1,69 @@
+{
+  "name": "yl-bpmn-process-designer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "基于VUE2.0、符合BPMN2.0规范的bpmn.js规范实现的在线流程建模工具网站",
+  "author": {
+    "name": "YIueil",
+    "email": "YIueil@163.com",
+    "node": "16.15.0"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "ant-design-vue": "1.7.8",
+    "bpmn-js": "^13.2.2",
+    "core-js": "^3.8.3",
+    "less": "2.7.3",
+    "less-loader": "4.0.6",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-plugin-import": "^1.13.8",
+    "bpmn-js-properties-panel": "^4.0.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14",
+    "@bpmn-io/properties-panel": "^3.2.1",
+    "@bpmn-io/variable-resolver": "1.0.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "_id": "yl-bpmn-process-designer@1.0.0",
+  "bugs": {
+    "url": "https://github.com/YIueil/yl-bpmn-process-designer/issues"
+  },
+  "homepage": "https://github.com/YIueil/yl-bpmn-process-designer#readme",
+  "license": "MIT",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YIueil/yl-bpmn-process-designer.git"
+  }
+}
